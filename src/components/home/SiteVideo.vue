@@ -1,14 +1,27 @@
 <template>
-    <div class="player-wrap">
-        <youtube :video-id="videoId" ref="youtube" @playing="playing"></youtube>
-    </div>
+    <v-card flat tile align="center" justify="center">
+        <div class="video-wrap" style="max-width:650px">
+            <youtube :video-id="videoId" ref="youtube" @playing="playing" resize="true" fitParent="true"></youtube>
+        </div>
+    </v-card>
 </template>
 
 <script>
 export default {
+    props: {
+       identifier: { 
+            type: String,
+            default: '6WRlMvxPlCA' 
+        }
+    },
     data() {
         return {
-            videoId: 'lG0Ys-2d4MA'
+            videoId: this.identifier,
+            videoWidth: [
+                {size: 'sm', width: 400},
+                {size: 'md', width: 600},
+                {size: 'xs', width: 350}
+            ]
         }
     },
     methods: {

@@ -6,10 +6,29 @@
         <v-col>
           <div class="text-center home-section">
             <h2>THE FASTEST WAY TO INCREASE YOUR REVENUE</h2>
-            <p>
-              Our digital marketing agency, based in Northern Virginia, bridges the gap for businesses that don’t have the people, resources, time or expertise to get a measurable return on digital marketing.
-            </p>
-            <v-divider></v-divider>
+            <v-container fluid>
+              <v-row dense align="center">
+                <v-col cols="12" md="7">
+                  <p class="px-12 mr-lg-5 text-center text-sm-left mb-12 mb-md-0 text--lighten-4">
+                    Our digital marketing agency bridges the gap for businesses that don’t have the people, resources, time or expertise to get a measurable return on digital marketing.
+                  </p>
+                </v-col>
+                <v-col cols="12" md="5">
+                  <v-card 
+                    flat
+                    class="mx-auto px-12 px-sm-5"
+                    max-width="600"
+                  >
+                    <v-img
+                      src="@/assets/img/social-media-01.svg"
+                      class="white--text align-end"
+                    >
+                    </v-img>
+                  </v-card>
+                </v-col>
+              </v-row>
+            </v-container>
+            <v-divider class="mt-12 mx-12"></v-divider>
           </div>
         </v-col>
       </v-row>
@@ -22,18 +41,43 @@
             <h2>
               ARE YOU STRUGGLING WITH MAKING DIGITAL MARKETING WORK FOR YOUR BUSINESS?
             </h2>
-            <v-divider></v-divider>    
-            <SiteVideo/> 
+            <p class="headline mb-10">
+              Let us do all the heavy lifting while you focus on your business.
+            </p>
+              <v-container fluid>
+                <v-row dense align="center">
+                  <v-col cols="12" md="5">
+                    <v-card 
+                      flat
+                      class="mx-auto px-12 px-sm-5"
+                      max-width="600"
+                    >
+                      <v-img
+                        src="@/assets/img/social-media-03.svg"
+                        class="white--text align-end"
+                      >
+                      </v-img>
+                    </v-card>
+                  </v-col>
+                  <v-col cols="12" md="7">
+                    <p class="px-12 ml-lg-5 text-center text-sm-right mt-12 mb-md-0 text--lighten-4">
+                      Digital marketing can be overwhelming and simply slit your focus from your business and customers. We make sure you focus 100% on your products and services while we bring the customers in the door.
+                    </p>
+                  </v-col>
+                </v-row>
+            </v-container>
+            <v-divider class="ma-12"></v-divider>    
+            <SiteVideo class="justify-center" indetifier="7CBW0HD7Am4"/> 
           </div>
         </v-col>
       </v-row>
-        <v-row
+      <v-row
           align="center"
           justify="center"
         >
         <v-col>
           <div class="text-center home-section">
-              <v-btn large rounded class="mt-5">
+              <v-btn large rounded  class="mt-5 subtitle-2">
                 Get a free social media audit for your business
               </v-btn>
           </div>
@@ -54,6 +98,19 @@ export default {
     Header,
     SiteVideo,
     Footer
-  }
+  },
+  data: () => ({
+    cards: [
+      { title: 'Favorite road trips', src: 'https://cdn.vuetifyjs.com/images/cards/road.jpg', flex: 6 },
+      { title: 'Best airlines', src: 'https://cdn.vuetifyjs.com/images/cards/plane.jpg', flex: 6 },
+    ],
+  })
 }
 </script>
+<style lang="scss" scoped>
+  .home-section{
+    h2{
+      margin: 50px 0 80px;
+    } 
+  }
+</style>
