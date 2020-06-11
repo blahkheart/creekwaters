@@ -9,7 +9,7 @@
             <v-container fluid>
               <v-row dense align="center">
                 <v-col cols="12" md="7">
-                  <p class="px-12 mr-lg-5 text-center text-sm-left mb-12 mb-md-0 text--lighten-4">
+                  <p class="px-12 mr-lg-5 text-center text-sm-left mb-12 mb-md-0 text--secondary">
                     Our digital marketing agency bridges the gap for businesses that don’t have the people, resources, time or expertise to get a measurable return on digital marketing.
                   </p>
                 </v-col>
@@ -60,7 +60,7 @@
                     </v-card>
                   </v-col>
                   <v-col cols="12" md="7">
-                    <p class="px-12 ml-lg-5 text-center text-sm-right mt-12 mb-md-0 text--lighten-4">
+                    <p class="px-12 ml-lg-5 text-center text-sm-right mt-12 mb-md-0 text--secondary">
                       Digital marketing can be overwhelming and simply slit your focus from your business and customers. We make sure you focus 100% on your products and services while we bring the customers in the door.
                     </p>
                   </v-col>
@@ -77,9 +77,12 @@
         >
         <v-col>
           <div class="text-center home-section">
-              <v-btn large rounded  class="mt-5 subtitle-2">
+              <!-- <v-btn large rounded  class="mt-5 subtitle-2">
                 Get a free social media audit for your business
-              </v-btn>
+              </v-btn> -->
+              <button class="cw-btn subtitle-2 deep-purple white--text pa-5 text-uppercase my-5">
+                Get a free social media audit for your business
+              </button>
           </div>
         </v-col>
       </v-row>
@@ -104,9 +107,11 @@ export default {
       { title: 'Favorite road trips', src: 'https://cdn.vuetifyjs.com/images/cards/road.jpg', flex: 6 },
       { title: 'Best airlines', src: 'https://cdn.vuetifyjs.com/images/cards/plane.jpg', flex: 6 },
     ],
+    isActive: false
   })
 }
 </script>
+
 <style lang="scss" scoped>
   .home-section{
     h2{

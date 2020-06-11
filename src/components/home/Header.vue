@@ -8,9 +8,12 @@
                             {{heading.text}}
                         </h1>
                    
-                        <v-btn large rounded class="mt-12">
+                        <!-- <v-btn large rounded class="mt-12 d-flex">
                             free social media audit for your business
-                        </v-btn>
+                        </v-btn> -->
+                        <button class="cw-btn subtitle-2 deep-purple white--text pa-5 text-uppercase mt-8">
+                            free social media audit for your business
+                        </button>
                     </div>
                 </v-col>
             </v-row>

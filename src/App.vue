@@ -21,5 +21,15 @@ export default {
 <style lang="scss">
 #app {
   font-family: raleway;
+  button.cw-btn{
+    border-radius: 3px;
+    transition: all .3s ease-in-out;
+    &:hover {
+      background: darken(#6A4CB7, 8%) !important;
+    }
+    &:active {
+      background: darken(#6A4CB7, 20%) !important;
+    }
+  }
 }
 </style>
